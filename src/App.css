@@ -19,22 +19,40 @@ body {
   text-align: center;
 }
 
+footer {
+  font-size: small;
+}
+
+h1 {
+  font-weight: 900;
+  color: var(--accent-color2);
+  margin-bottom: 2rem;
+}
+
+main {
+  margin: 0 auto;
+}
+
 .App {
   font-family: "Ubuntu", sans-serif;
 }
 
 .App img {
-  width: 10%;
-  margin: 5rem;
+  width: 150px;
+  height: 100%;
+  margin: 2rem;
 }
 
 .App a {
   text-decoration: none;
   color: black;
+  color: var(--accent-color2);
+  font-weight: 900;
+  transition: all 200ms ease-in-out;
 }
 
 .App a:hover {
   text-decoration: none;
-  color: var(--accent-color2);
+  color: var(--accent-color1);
   font-weight: 900;
 }

@@ -1,2 +1,63 @@
+:root {
+  --background-color1: #e8d595;
+  --background-color2: #e7cba9;
+  --app-color: #aad9cd;
+  --accent-color1: #e9bbb5;
+  --accent-color2: #8da47e;
+  --shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+}
+
 .Dictionary {
+  background-color: var(--accent-color1);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+.Dictionary form {
+  width: 100%;
+}
+
+.Dictionary .searchBar {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-family: inherit;
+  border: 3px solid var(--accent-color1);
+  border-radius: 0.5rem;
+  color: var(--accent-color2);
+  box-shadow: var(--shadow);
+}
+
+.Dictionary .searchBar:focus {
+  background-color: white;
+  font-family: inherit;
+  border: 3px solid var(--accent-color2);
+  border-radius: 0.5rem;
+  color: var(--accent-color2);
+  outline: none !important;
+}
+
+.Dictionary .searchButton {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-family: inherit;
+  border: 3px solid var(--accent-color2);
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    to bottom right,
+    var(--background-color1),
+    var(--background-color2)
+  );
+  color: var(--accent-color2);
+  box-shadow: var(--shadow);
+}
+
+.Dictionary .searchButton:hover {
+  background: var(--app-color);
+  color: var(--accent-color2);
 }
