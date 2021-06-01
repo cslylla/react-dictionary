@@ -1,0 +1,25 @@
+:root {
+  --background-color1: #e8d595;
+  --background-color2: #e7cba9;
+  --app-color: #aad9cd;
+  --accent-color1: #e9bbb5;
+  --accent-color2: #8da47e;
+}
+
+body {
+  background: linear-gradient(
+      to bottom right,
+      var(--background-color1),
+      var(--background-color2)
+    )
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.App img {
+  width: 10%;
+  margin: 5rem;
+}
