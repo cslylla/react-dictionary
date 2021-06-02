@@ -14,12 +14,12 @@ body {
     no-repeat center center fixed;
   background-size: cover;
   height: 100%;
-  overflow: hidden;
   text-align: center;
 }
 
 footer {
   font-size: small;
+  margin-bottom: 5rem;
 }
 
 h1 {
@@ -33,7 +33,7 @@ main {
 }
 
 .App {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .App img {

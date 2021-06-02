@@ -1,0 +1,12 @@
+.Results .resultCard {
+  background-color: var(--white);
+  color: var(--accent-color2);
+  padding: 2rem;
+  text-align: start;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
