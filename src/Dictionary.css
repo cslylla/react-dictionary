@@ -4,10 +4,13 @@
   --white: #e5e5e5;
   --accent-color: #8da47e;
   --shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+  --dark-background-color1: #384232;
+  --dark-background-color2: #1c2119;
+  --dark-card-color: #0e100d;
 }
 
 .Dictionary section {
-  background-color: var(--white);
+  background-color: var(--bg-color);
   padding: 2rem;
   text-align: start;
   border-radius: 1rem;
@@ -16,6 +19,14 @@
   display: block;
   margin: 2rem auto;
   margin-bottom: 2rem;
+}
+
+.Dictionary section.light {
+  --bg-color: var(--white);
+}
+
+.Dictionary section.dark {
+  --bg-color: var(--dark-card-color);
 }
 
 .Dictionary form {
