@@ -1,33 +1,34 @@
 :root {
   --background-color1: #e8d595;
   --background-color2: #e7cba9;
-  --accent-color1: #e9bbb5;
-  --accent-color2: #8da47e;
+  --white: #e5e5e5;
+  --accent-color: #8da47e;
+  --shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
 }
 
-.Phonetic .resultCard {
+.Phonetic section {
   background-color: var(--white);
-  color: var(--accent-color2);
+  color: var(--accent-color);
   padding: 2rem;
   text-align: start;
   border-radius: 1rem;
   box-shadow: var(--shadow);
   max-width: 800px;
   display: block;
-  margin: 0 auto;
+  margin: 2rem;
   margin-bottom: 2rem;
 }
 
 .Phonetic .play {
   font-size: 2rem;
-  color: var(--accent-color2);
+  color: var(--accent-color);
   margin: 1rem;
 }
 
 .Phonetic .play:hover {
   cursor: pointer;
   color: var(--white);
-  background-color: var(--accent-color2);
+  background-color: var(--accent-color);
   border-radius: 50%;
 }
 

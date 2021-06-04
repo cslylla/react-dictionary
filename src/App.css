@@ -1,8 +1,10 @@
 :root {
   --background-color1: #e8d595;
   --background-color2: #e7cba9;
-  --accent-color1: #e9bbb5;
-  --accent-color2: #8da47e;
+  --white: #e5e5e5;
+  --accent-color: #8da47e;
+  --accent-color2: #e9bbb5;
+  --shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
 }
 
 body {
@@ -24,7 +26,7 @@ footer {
 
 h1 {
   font-weight: 900;
-  color: var(--accent-color2);
+  color: var(--accent-color);
   margin-bottom: 2rem;
 }
 
@@ -45,13 +47,13 @@ main {
 .App a {
   text-decoration: none;
   color: black;
-  color: var(--accent-color2);
+  color: var(--accent-color);
   font-weight: 900;
   transition: all 200ms ease-in-out;
 }
 
 .App a:hover {
   text-decoration: none;
-  color: var(--accent-color1);
+  color: var(--accent-color2);
   font-weight: 900;
 }
