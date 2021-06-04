@@ -1,6 +1,7 @@
 import React from "react";
 import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
+import Photos from "./Photos";
 import "./Results.css";
 
 export default function Results(props){
@@ -8,7 +9,7 @@ export default function Results(props){
     return(
         <div className="Results">
         <section>
-        <h2><strong>{props.results.word}</strong></h2>
+        <h3><strong>{props.results.word}</strong></h3>
         {props.results.phonetics.map(function(phonetic, index){
             return(
                 <div key={index}>
@@ -25,7 +26,7 @@ export default function Results(props){
                 </section>
             )
         })}
-                
+        <Photos photos={props.photos} alt={props.alt}/>        
         </div>
     )
     } else {

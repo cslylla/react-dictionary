@@ -6,7 +6,7 @@
   --shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
 }
 
-.Results section {
+.Photos section {
   background-color: var(--white);
   color: var(--accent-color);
   padding: 2rem;
@@ -19,9 +19,8 @@
   margin-bottom: 2rem;
 }
 
-.Results h3 {
-  text-align: start;
-  color: var(--accent-color);
+.Photos .picture {
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
   margin-bottom: 1.5rem;
-  font-size: 2rem;
 }

@@ -8,7 +8,7 @@ export default function App() {
     <div className="container">
 
 <header className="App-header"> 
-      <img src={read} alt="Reading woman drawing" className="img-fluid" />
+      <img src={read} alt="Reading woman drawing" className="img-fluid logo" />
       <h1>Dictionary</h1>
 </header>
 

@@ -14,7 +14,7 @@ export default function Phonetic(props){
     return (
         <div className="Phonetic">
         <hr />   
-        <h3><i className="fas fa-play-circle play" onClick={play} tabIndex="0" title="Play audio of phonetic"></i> {props.phonetic.text}</h3>
+        <h4><i className="fas fa-play-circle play" onClick={play} tabIndex="0" title="Play audio of phonetic"></i> {props.phonetic.text}</h4>
         </div>
        
     )
