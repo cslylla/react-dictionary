@@ -10,13 +10,13 @@
   --dark-card-color: #0e100d;
 }
 
-#darkMode {
+.DarkMode #darkMode {
   background-color: var(--dark-card-color);
   width: 45px;
   height: 45px;
   border: none;
   border-radius: 50%;
-  transition: background-color 300ms ease-in-out, filter 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   margin-top: 2rem;
 }
 
@@ -32,21 +32,10 @@
 }
 
 #darkMode.clicked {
-  filter: none !important;
   background-color: var(--white);
-  color: var(--accent-color);
 }
 
 .fa-moon {
   color: var(--accent-color);
   font-size: 2rem;
-}
-
-.fa-moon:hover {
-  color: var(--accent-color);
-  background-color: transparent;
-}
-
-.fa-moon.clicked {
-  color: var(--accent-color);
 }

@@ -35,17 +35,15 @@ body.dark {
 footer {
   font-size: small;
   margin-bottom: 5rem;
+  color: var(--footer-text-color);
 }
 
-.App footer {
-  color: var(--text-color);
+.light footer {
+  --footer-text-color: var(--accent-color);
 }
 
-footer.light {
-  --text-color: black;
-}
-footer.dark {
-  --text-color: var(--white);
+.dark footer {
+  --footer-text-color: var(--white);
 }
 
 h1 {

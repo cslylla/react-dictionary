@@ -21,11 +21,11 @@
   margin-bottom: 2rem;
 }
 
-.Dictionary section.light {
+.light section {
   --bg-color: var(--white);
 }
 
-.Dictionary section.dark {
+.dark section {
   --bg-color: var(--dark-card-color);
 }
 
