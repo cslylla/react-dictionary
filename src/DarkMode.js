@@ -3,7 +3,7 @@ import React from "react";
 import "./DarkMode.css";
 
 export default function DarkMode(){
-    let clickedClass = "clicked";
+    let clickedClassName = "clicked";
     const body = document.body;
     const lightTheme = "light";
     const darkTheme = "dark";
@@ -23,12 +23,12 @@ export default function DarkMode(){
     const switchTheme = (e) => {
         if(theme === darkTheme){
             body.classList.replace(darkTheme, lightTheme);
-            e.target.classList.remove(clickedClass);
+            e.target.classList.remove(clickedClassName);
             localStorage.setItem("theme", "light");
             theme=lightTheme;
         } else{
             body.classList.replace(lightTheme, darkTheme);
-            e.target.classList.add(clickedClass);
+            e.target.classList.add(clickedClassName);
             localStorage.setItem("theme", "dark");
             theme=darkTheme;
 
@@ -38,10 +38,10 @@ export default function DarkMode(){
     return(
         <div className="DarkMode text-end">
         <button
-            className={theme === "dark" ? clickedClass : ""}
+            className={theme === "dark" ? clickedClassName : ""}
             id="darkMode"
             onClick={(e)=>switchTheme(e)}>
-        <i class="far fa-moon"></i>
+        <i className="far fa-moon"></i>
         </button>
         </div>
     )

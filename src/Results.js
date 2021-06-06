@@ -30,7 +30,13 @@ export default function Results(props){
         </div>
     )
     } else {
-        return null;
+        return (
+            <div className="Results">
+            <section>
+            <h3 className="text-center">Try searching another word.</h3>
+            </section>
+            </div>
+        )
     }
     
 }

@@ -3,8 +3,6 @@ import axios from "axios";
 import Results from "./Results";
 import Quote from "./Quote";
 
-
-
 import "./Dictionary.css";
 
 export default function Dictionary(){
@@ -42,30 +40,30 @@ export default function Dictionary(){
     function handleKeywordChange(event){
         setKeyword(event.target.value)
     }
+
     let show=null;
-    if (loaded){
-        show=(  <Results results={results} photos={photos} alt={keyword}/>)
+    if (loaded) {   
+        show=(<Results results={results} photos={photos} alt={keyword}/>);
     } else {
         show=(<Quote />);
     }
 
      return(
-            <div className="Dictionary">
-            <section>
+        <div className="Dictionary">
+        <section>
             <h2>What word do you want to look up?</h2>   
-            <form onSubmit={handleSubmit}>
-            <div className="row">
-            <div className="col-md-8">
-                <input type="search" autoFocus={true} autoComplete="off" placeholder="Search for a word" onChange={handleKeywordChange} className="searchBar"/>
-            </div>
-            <div className="col-md-4">
-                <input type="submit" value="Search" className="searchButton" title="Search"/>
-            </div>
-            </div>  
-            </form>
-            </section> 
+        <form onSubmit={handleSubmit}>
+        <div className="row">
+        <div className="col-md-8">
+            <input type="search" autoFocus={true} autoComplete="off" placeholder="Search for a word" onChange={handleKeywordChange} className="searchBar"/>
+        </div>
+        <div className="col-md-4">
+            <input type="submit" value="Search" className="searchButton" title="Search"/>
+        </div>
+        </div>  
+        </form>
+        </section> 
             {show}
-            </div>
+        </div>
         )
-    
 }

@@ -3,9 +3,8 @@ import read2 from "./images/read2.svg"
 
 import "./Quote.css";
 
-
 export default function Quote(){
-
+    /*
     let quotes =[
         "Be mindful when it comes to your words. A string of some that don't mean much to you, may stick with someone else for a lifetime.",
         "Be careful with your words. Once they are said, they can be only forgiven, not forgotten.",
@@ -32,16 +31,23 @@ export default function Quote(){
         "No matter what anybody tells you, words and ideas can change the world.",
         "The best word shakers were the ones who understood the true power of words. They were the ones who could climb the highest.",
         "Speech has power. Words do not fade. What starts out as a sound, ends in a deed."
-    ]
-    function randomNumber(min, max){
-        let number = Math.random()*(max-min) + min;
-        return Math.floor(number);
+    ];
+
+    
+    function randomNumber(min, max) {
+        let number = Math.floor(Math.random()*(max-min) + min);
+        return number;
     }
+       
+    function getQuote(number){
+        let quote = quotes[number];
+        return quote;
+    }
+    */
 
     return(
         <div className="Quote">
-        <div className="quote">{quotes[randomNumber(1,26)]}</div>
         <img src={read2} alt="Reading woman drawing" className="img-fluid picture" />
         </div>
-    );
+    );   
 }
